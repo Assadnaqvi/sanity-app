@@ -12,6 +12,7 @@ import {client} from "./lib/sanityClient"
 import Promotions from './components/promptions'
 import UniqueJewellery from './components/uniquejewellery'
 import Subscribe from './components/subscribe'
+import Menaddtocart from "./components/Menaddtocart";
 
 
 
@@ -47,8 +48,10 @@ export default async function Home(){
   return  ( <div className="grid grid-cols-[auto,auto] justify-center gap-4">
       {data.map((item)=>(
      
+
+     <Menaddtocart item={item}/>
         
-        <ProductCard item={item} />
+       // <ProductCard item={item} />
       
       
 ))}
